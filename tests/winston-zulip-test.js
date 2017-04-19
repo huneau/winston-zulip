@@ -1,13 +1,13 @@
-const vows = require('vows'),
-  transport = require('winston/test/transports/transport'),
+const winston = require('winston'),
   zulip = require('../lib/winston-zulip').Couchdb;
 
-vows.describe('winston/transports/zulip').addBatch({
-  'An instance of the zulip Transport': transport(zulip, {
+
+ winston.add(winston.transports.Zulip, {
     zulipUsername: 'wekan-logger-bot@avisto.com',
     zulipApikey: 'uMOBPIxRsC3wmadvlk1T4OyUjG7gQUlv',
     zulipRealm: 'https://192.168.6.50:4430',
     zulipTo: 'engineering',
-    zulipSubject: 'project',
-  }),
-}).export(module);
+    zulipSubject: 'project'
+  });
+
+winston.log('info', 'Hello distributed log files!');
