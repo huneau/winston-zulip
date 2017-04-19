@@ -1,7 +1,7 @@
 {
   "name": "winston-zulip",
   "description": "A zulip transport for Winston",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "author": "huneau romain <huneau.romain@gmail.com>",
   "repository": {
     "type": "git",
@@ -15,8 +15,9 @@
     "zulip"
   ],
   "license": "MIT",
-  "Dependencies": {
-    "winston": "2.3.x"
+  "dependencies": {
+    "winston": "2.3.1",
+    "zulip-js": "1.0.12"
   },
   "directories": {
     "test": "./tests/"
