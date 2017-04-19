@@ -1,0 +1,32 @@
+{
+  "name": "winston-zulip",
+  "description": "A zulip transport for Winston",
+  "version": "0.0.1",
+  "author": "huneau romain <huneau.romain@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huneau/winston-zulip"
+  },
+  "keywords": [
+    "logging",
+    "sysadmin",
+    "tools",
+    "winston",
+    "zulip"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "winston": "0.6.x",
+    "vows": "0.6.x"
+  },
+  "directories": {
+    "test": "./tests/"
+  },
+  "main": "./lib/winston-zulip",
+  "scripts": {
+    "test": "vows tests/winston-zulip-test.js --spec"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
