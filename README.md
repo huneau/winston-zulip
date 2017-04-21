@@ -22,6 +22,6 @@ winston.log('info', 'Hello distributed log files!');
 
 `http://yourdomain/#settings`
 
-![apikeycreation][https://github.com/huneau/winston-zulip/zulip-apikey.png]
+![apikeycreation][http://raw.githubusercontent.com/huneau/winston-zulip/master/zulip-apikey.png]
 
 You can create your own apikey or create a bot and retreive it own apikey. For both of these solution, you can download a file that refer all needed variable.
